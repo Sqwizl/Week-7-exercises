@@ -21,12 +21,11 @@
         <br>
     </p>
 
-    <table>
+   <table>
         <tr>
             <td>
                 <form id="Weatherform">
-                    <label for="temperature"> Enter Temperature (°C):</label>
-                    <input type="number" id="temperature" required>
+                    <input type="number" id="temperatureInput" placeholder="Enter Temperrature (°C)">
                     <button type="button" onclick="suggestWeather()">Submit</button>
                 </form>
             </td>
@@ -37,8 +36,7 @@
     </table>
     <script>
         function suggestWeather() {
-            let temperature = document.getElementById("Weatherform").
-                temperature.value = parseFloat(document.getElementById("temperature").value);
+            let temperature = parseFloat(document.getElementById("temperatureInput").value);
             let output = document.getElementById("output");
             if (temperature < 15) {
                 output.innerHTML = "It's cold.🥶 - Wear a jacket.";
