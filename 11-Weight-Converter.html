@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+</head>
+
+<body>
+    <h3>11. Weight Converter</h3>
+
+    <p>
+        Write two functions: one to convert imperial pounds to kilograms and another to convert kilograms to imperial
+        pounds.
+        Each function should take one parameter (the weight) and return the converted value.
+        The formula for that is: kilograms = pounds / 2.2 and pounds = kilograms * 2.2
+        <br>Example call:console.log(kilosToPounds(10)); // should log `22`
+        <br>
+        <br>
+        Convert all these values: 12 pounds 14 pounds 0 pounds -5 pounds 1 kilo 0.512 kilos 2342324323 kilos
+        <br>
+    </p>
+    <script>
+        function kilosToPounds(kilos) {
+            let pounds = 10;
+            return kilos * 2.2;
+        }
+        function poundsToKilos(pounds) {
+            let kilos = 10;
+            return pounds / 2.2;
+        }
+        console.log(kilosToPounds(10));
+        console.log(poundsToKilos(10));
+
+        {
+            let pounds = 12;
+            console.log(kilosToPounds(12));
+            console.log(poundsToKilos(12));
+        }
+        {
+            let pounds = 14;
+            console.log(kilosToPounds(14));
+            console.log(poundsToKilos(14));
+        }
+        {
+            let pounds = 0;
+            console.log(kilosToPounds(0));
+            console.log(poundsToKilos(0));
+        }
+        {
+            let pounds = -5;
+            console.log(kilosToPounds(-5));
+            console.log(poundsToKilos(-5));
+        }
+        {
+            let kilos = 1;
+            console.log(kilosToPounds(1));
+            console.log(poundsToKilos(1));
+        }
+        {
+            let kilos = 0.512;
+            console.log(kilosToPounds(0.512));
+            console.log(poundsToKilos(0.512));
+        }
+        {
+            let kilos = 2342324323;
+            console.log(kilosToPounds(2342324323));
+            console.log(poundsToKilos(2342324323));
+        }
+    </script>
+    <br>
+    <br>
+    <img src="/Users/student/Documents/workspace/week-7/ss2.png" alt="ss of console" height="300" width="600">
+</body>
+
+</html>
